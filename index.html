@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Garv Chaturvedi - Resume Website</title>
+
+  <!-- Google Fonts: Oswald for headings and Work Sans for body text -->
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    /* =========================================
+       1. Element Selectors
+       ========================================= */
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #0f172a;
+      color: #cbd5e1;
+      font-family: 'Work Sans', sans-serif;
+      line-height: 1.6;
+    }
+
+    h1, h2, h3 {
+      font-family: 'Oswald', sans-serif;
+      color: #f8fafc;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-top: 0;
+    }
+
+    h1 {
+      font-size: 40px;
+      margin-bottom: 8px;
+    }
+
+    h2 {
+      font-size: 24px;
+      margin-bottom: 18px;
+      padding-bottom: 8px;
+      border-bottom: 2px solid #1e293b;
+      color: #14b8a6;
+    }
+
+    h3 {
+      font-size: 20px;
+      margin-bottom: 6px;
+    }
+
+    p {
+      margin-top: 0;
+      margin-bottom: 10px;
+      font-size: 16px;
+    }
+
+    a {
+      color: #14b8a6;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    a:hover {
+      color: #fb7185;
+      text-decoration: underline;
+    }
+
+    ul {
+      margin-top: 8px;
+      margin-bottom: 0;
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    footer {
+      background-color: #1e293b;
+      border-top: 1px solid #334155;
+      text-align: center;
+      padding: 30px 20px;
+      margin-top: 40px;
+    }
+
+    /* =========================================
+       2. ID Selectors
+       ========================================= */
+    #navbar {
+      background-color: #1e293b;
+      border-bottom: 2px solid #14b8a6;
+      position: sticky;
+      top: 0;
+      padding: 14px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    #intro-section {
+      padding-top: 35px;
+      padding-bottom: 25px;
+    }
+
+    #experience {
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+
+    #leadership {
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+
+    #skills {
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+
+    #contact {
+      color: #cbd5e1;
+    }
+
+    /* =========================================
+       3. Class Selectors
+       ========================================= */
+    .container {
+      width: 90%;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 18px;
+      flex-wrap: wrap;
+    }
+
+    .nav-links a {
+      color: #f8fafc;
+      font-size: 15px;
+    }
+
+    .nav-links a:hover {
+      color: #14b8a6;
+      text-decoration: none;
+    }
+
+    .intro-box {
+      background-color: #1e293b;
+      border: 1px solid #334155;
+      border-left: 4px solid #14b8a6;
+      border-radius: 6px;
+      padding: 20px;
+      margin-top: 20px;
+    }
+
+    .card {
+      background-color: #1e293b;
+      border: 1px solid #334155;
+      border-left: 4px solid #14b8a6;
+      border-radius: 6px;
+      padding: 20px;
+      margin-bottom: 16px;
+    }
+
+    .coral-card {
+      border-left: 4px solid #fb7185;
+    }
+
+    .tag {
+      display: inline-block;
+      background-color: #0f172a;
+      color: #14b8a6;
+      border: 1px solid #14b8a6;
+      border-radius: 4px;
+      padding: 3px 10px;
+      font-size: 13px;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+
+    .coral-tag {
+      color: #fb7185;
+      border: 1px solid #fb7185;
+    }
+
+    .skill-row {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .skill-box {
+      background-color: #1e293b;
+      border: 1px solid #334155;
+      border-top: 3px solid #14b8a6;
+      border-radius: 6px;
+      padding: 20px;
+      flex: 1;
+      min-width: 280px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Navigation Bar -->
+  <div id="navbar">
+    <strong style="font-family: 'Oswald', sans-serif; font-size: 20px; color: #f8fafc; letter-spacing: 1px;">
+      GARV CHATURVEDI
+    </strong>
+    <div class="nav-links">
+      <a href="#intro-section">Introduction</a>
+      <a href="#experience">Experience &amp; Education</a>
+      <a href="#leadership">Leadership</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+
+  <!-- Main Page Content Container -->
+  <div class="container">
+
+    <!-- 1. Hero / Introduction Section -->
+    <div id="intro-section">
+      <h1>GARV CHATURVEDI</h1>
+      <p style="font-size: 18px; color: #f8fafc; font-weight: 500;">
+        Target Roles (Summer 2027): Finance, Risk &amp; Consulting Internships
+      </p>
+      <p>
+        Email: <a href="mailto:garvchaturvedi2007@gmail.com">garvchaturvedi2007@gmail.com</a> &nbsp;|&nbsp;
+        LinkedIn: <a href="https://www.linkedin.com/in/garv-chaturvedi" target="_blank">www.linkedin.com/in/garv-chaturvedi</a>
+      </p>
+
+      <div class="intro-box">
+        <h3 style="color: #14b8a6; font-size: 16px; margin-bottom: 8px;">INTRODUCTION</h3>
+        <p style="color: #f8fafc; font-size: 17px; margin-bottom: 0;">
+          “I’m a first-year IIM Bangalore BBA student who breaks a problem down, forms a view, tests it, and learns from what happens, and I’m looking for a summer 2027 finance internship where I work with data.”
+        </p>
+      </div>
+    </div>
+
+    <!-- 2. Priority Experience & Education Section -->
+    <div id="experience">
+      <h2>Experience &amp; Education</h2>
+
+      <!-- 1. Grant Thornton Bharat LLP -->
+      <div class="card coral-card">
+        <span class="tag coral-tag">From November 2026 | Hybrid</span>
+        <h3>Grant Thornton Bharat LLP</h3>
+        <p style="color: #f8fafc; font-weight: 500; margin-bottom: 0;">
+          Intern (Operations Role)
+        </p>
+      </div>
+
+      <!-- 2. IIM Bangalore -->
+      <div class="card">
+        <span class="tag">Current | First-Year Student</span>
+        <h3>Indian Institute of Management Bangalore (IIMB)</h3>
+        <p style="color: #f8fafc; font-weight: 500; margin-bottom: 0;">
+          BBA in Digital Business and Entrepreneurship
+        </p>
+      </div>
+
+      <!-- 3. DAWG -->
+      <div class="card">
+        <span class="tag">July 2024 – September 2024</span>
+        <h3>DAWG</h3>
+        <p style="color: #f8fafc; font-weight: 500;">
+          Business Development Intern
+        </p>
+        <ul>
+          <li>Pitched a local vendor that serves several colleges, which led to launching on-campus sales at Deshbandhu College.</li>
+          <li>Conducted B2B outreach across 18 educational institutions and learned how much of a startup comes down to on-ground execution.</li>
+        </ul>
+      </div>
+
+      <!-- 4. University of Delhi -->
+      <div class="card">
+        <span class="tag">Current</span>
+        <h3>University of Delhi (School of Open Learning)</h3>
+        <p style="color: #f8fafc; font-weight: 500; margin-bottom: 0;">
+          Bachelor of Commerce (B.Com)
+        </p>
+      </div>
+    </div>
+
+    <!-- 3. Leadership & Achievements Section -->
+    <div id="leadership">
+      <h2>Leadership &amp; Achievements</h2>
+
+      <div class="card">
+        <span class="tag">Team Lead</span>
+        <h3>Impeccable — Student Event Leadership</h3>
+        <p style="margin-bottom: 0;">
+          Led a team of 5 students to plan, organize, and host an event with over 200 attendees.
+        </p>
+      </div>
+
+      <div class="card coral-card">
+        <span class="tag coral-tag">2nd Place (Runner-Up)</span>
+        <h3>Shreeteq — Inter-School Gaming Competition</h3>
+        <p style="margin-bottom: 0;">
+          Won 2nd place in the Shreeteq inter-school competition competing across multiple games including Valorant, Brawlhalla, Krunker, and Minecraft.
+        </p>
+      </div>
+    </div>
+
+    <!-- 4. Skills Section -->
+    <div id="skills">
+      <h2>Skills</h2>
+
+      <div class="skill-row">
+        <!-- Box 1: Business, Finance & Data Skills -->
+        <div class="skill-box">
+          <h3>Business, Finance &amp; Data Skills</h3>
+          <ul>
+            <li><strong>Microsoft Excel &amp; PowerPoint:</strong> Learned in school and used across multiple school projects for data analysis, spreadsheets, and presentations.</li>
+            <li><strong>B2B Outreach &amp; Pitching:</strong> Direct experience pitching vendors and building college partnerships.</li>
+            <li><strong>Problem Solving &amp; Operations:</strong> Breaking down problems, testing views with data, and executing operations tasks.</li>
+          </ul>
+        </div>
+
+        <!-- Box 2: Skills Learned from Competitive Gaming -->
+        <div class="skill-box">
+          <h3>Skills Learned from Competitive Gaming</h3>
+          <ul>
+            <li><strong>Team Coordination &amp; Communication (Valorant):</strong> Clear communication and teamwork under high pressure.</li>
+            <li><strong>Quick Decision Making &amp; Adaptation (Brawlhalla &amp; Krunker):</strong> Reading opponents quickly and adapting tactics in real time.</li>
+            <li><strong>Resource Management &amp; Planning (Minecraft):</strong> Planning ahead, managing limited resources, and executing builds efficiently.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- 5. Footer / Contact Section -->
+  <footer id="contact">
+    <h3>Contact Me</h3>
+    <p>
+      Email: <a href="mailto:garvchaturvedi2007@gmail.com">garvchaturvedi2007@gmail.com</a>
+    </p>
+    <p>
+      LinkedIn: <a href="https://www.linkedin.com/in/garv-chaturvedi" target="_blank">linkedin.com/in/garv-chaturvedi</a>
+    </p>
+    <p style="margin-bottom: 0; color: #94a3b8; font-size: 14px;">
+      Location: New Delhi, India
+    </p>
+  </footer>
+
+</body>
+</html>
