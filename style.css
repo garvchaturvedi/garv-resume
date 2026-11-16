@@ -1,0 +1,339 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Work+Sans:wght@400;500;600&display=swap');
+
+:root {
+  --bg-navy: #131A22;
+  --text-white: #FFFFFF;
+  --text-slate: #98A3AF;
+  --line-grey: #2E3A47;
+  --accent-coral: #F25F68;
+  --paper-white: #FFFFFF;
+  --ink-black: #000000;
+
+  --space-sm: 8px;
+  --space-md: 24px;
+  --space-lg: 40px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Work Sans', sans-serif;
+  background-color: var(--bg-navy);
+  color: var(--text-white);
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+h1, h2, h3, .brand-font {
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  margin-top: 0;
+  letter-spacing: 0.5px;
+}
+
+p, li {
+  max-width: 70ch;
+}
+
+a {
+  color: var(--accent-coral);
+  text-decoration: none;
+}
+
+a:focus-visible, .btn:focus-visible, .btn-primary:focus-visible, .btn-secondary:focus-visible {
+  outline: 2px solid var(--accent-coral);
+  outline-offset: 3px;
+}
+
+/* Navbar (Flexbox) */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--space-md) 5%;
+  border-bottom: 1px solid var(--line-grey);
+}
+
+.nav-link, nav a {
+  color: var(--text-slate);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.nav-link:hover, nav a:hover {
+  color: var(--accent-coral);
+}
+
+/* Buttons */
+.btn, .btn-primary {
+  background-color: var(--accent-coral);
+  color: var(--bg-navy) !important;
+  padding: 12px var(--space-md);
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 4px;
+  display: inline-block;
+  border: 2px solid var(--accent-coral);
+  transition: opacity 0.2s ease;
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: var(--accent-coral) !important;
+  border: 2px solid var(--accent-coral);
+  padding: 10px var(--space-md);
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 4px;
+  display: inline-block;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.btn:hover, .btn-primary:hover {
+  opacity: 0.9;
+}
+
+.btn-secondary:hover {
+  background-color: var(--accent-coral);
+  color: var(--bg-navy) !important;
+}
+
+/* Hero Section */
+#hero {
+  padding: 80px 5% var(--space-lg);
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+#hero h1 {
+  font-size: 4rem;
+  margin-bottom: var(--space-sm);
+}
+
+/* Scoreboard (Grid) */
+#scoreboard {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: var(--space-md);
+  padding: var(--space-lg) 5%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.score-card {
+  border: 1px solid var(--line-grey);
+  padding: var(--space-md);
+  text-align: center;
+  border-radius: 6px;
+}
+
+.score-card h2 {
+  color: var(--accent-coral);
+  font-size: 3rem;
+  margin-bottom: var(--space-sm);
+}
+
+.score-card p {
+  color: var(--text-slate);
+  font-size: 0.95rem;
+  margin: 0 auto;
+}
+
+/* Standard Sections & Cards */
+.content-section, #experience, #education, #projects, #activities, #contact {
+  padding: var(--space-lg) 5%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.content-section h2, #experience h2, #education h2, #projects h2, #activities h2, #contact h2 {
+  font-size: 2rem;
+  border-bottom: 1px solid var(--line-grey);
+  padding-bottom: var(--space-sm);
+  margin-bottom: var(--space-md);
+  color: var(--text-white);
+}
+
+.card {
+  background-color: transparent;
+  border: 1px solid var(--line-grey);
+  border-left: 3px solid var(--accent-coral);
+  padding: var(--space-md);
+  margin-bottom: var(--space-md);
+  border-radius: 4px;
+}
+
+.card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 4px;
+  color: var(--text-white);
+}
+
+.card h4 {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: var(--text-white);
+  margin: 0 0 var(--space-sm) 0;
+}
+
+.card .date {
+  color: var(--text-slate);
+  font-size: 0.9rem;
+  margin-bottom: var(--space-sm);
+}
+
+.card ul {
+  margin: 0;
+  padding-left: 20px;
+  color: var(--text-slate);
+}
+
+.card li {
+  margin-bottom: var(--space-sm);
+}
+
+/* Printable White Paper Resume */
+#resume-container {
+  padding: var(--space-lg) 5%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.download-link {
+  display: block;
+  text-align: right;
+  margin-bottom: var(--space-md);
+}
+
+#resume {
+  background-color: var(--paper-white);
+  color: var(--ink-black);
+  padding: var(--space-lg) 50px;
+  max-width: 800px;
+  margin: 0 auto;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  border-radius: 2px;
+  font-family: 'Work Sans', sans-serif;
+}
+
+#resume h1 {
+  font-size: 2.4rem;
+  text-align: center;
+  margin-bottom: 4px;
+  color: var(--ink-black);
+}
+
+#resume .contact-info {
+  text-align: center;
+  font-size: 0.9rem;
+  margin-bottom: var(--space-md);
+  border-bottom: 1px solid var(--ink-black);
+  padding-bottom: var(--space-sm);
+}
+
+#resume h2 {
+  font-size: 1.2rem;
+  border-bottom: 1px solid var(--ink-black);
+  padding-bottom: 2px;
+  margin-top: var(--space-md);
+  margin-bottom: var(--space-sm);
+  color: var(--ink-black);
+}
+
+#resume h3 {
+  font-size: 1rem;
+  margin: 10px 0 2px 0;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 600;
+  text-transform: none;
+  color: var(--ink-black);
+}
+
+#resume p, #resume li {
+  font-size: 0.92rem;
+  color: var(--ink-black);
+  margin-bottom: 5px;
+}
+
+#resume ul {
+  padding-left: 20px;
+  margin-top: 4px;
+}
+
+footer {
+  text-align: center;
+  padding: var(--space-lg) 20px;
+  border-top: 1px solid var(--line-grey);
+  color: var(--text-slate);
+  font-size: 0.9rem;
+}
+
+/* Mobile Screens Under 700px */
+@media (max-width: 700px) {
+  #hero h1 {
+    font-size: 2.5rem !important;
+  }
+
+  nav {
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px !important;
+  }
+
+  nav div:last-child {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  #hero div, #contact div {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .btn, .btn-primary, .btn-secondary {
+    width: 100%;
+    text-align: center;
+  }
+
+  #resume {
+    padding: var(--space-md) 20px;
+  }
+
+  #resume h1 {
+    font-size: 1.8rem;
+  }
+}
+
+/* One-Page A4 Print Rule */
+@media print {
+  body {
+    background-color: var(--paper-white);
+  }
+
+  nav, #hero, #scoreboard, #experience, #education, #projects, #activities, #contact, footer, .download-link {
+    display: none !important;
+  }
+
+  #resume-container, #resume {
+    box-shadow: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+/* Reduced Motion Accessibility */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
